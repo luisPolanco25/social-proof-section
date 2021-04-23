@@ -8,3 +8,4 @@ This is my solution for a challenge made in Frontend Mentor's website.
 
 ## Live preview 
 
+https://luispolanco25.github.io/social-proof-section/

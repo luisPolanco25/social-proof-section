@@ -1,0 +1,282 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Spartan', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  padding: 100px;
+}
+
+#main {
+  display: flex;
+  margin: 0px auto 6rem auto;
+  width: 1240px;
+}
+
+#presentation {
+  width: 40%;
+}
+
+#presentation h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+#presentation p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+  line-height: 1.4;
+}
+
+#rating {
+  margin-left: 10rem;
+}
+
+#rating > div {
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#rating > div:last-child {
+  margin-bottom: 0rem;
+}
+
+#rating .paragraph {
+  color: hsl(300, 43%, 22%);
+  font-weight: 500;
+  margin-left: 1.7rem;
+}
+
+#report {
+  position: relative;
+  left: 2.6rem;
+}
+
+#best {
+  position: relative;
+  left: 5.2rem;
+}
+
+#reviews-container {
+  width: 1240px;
+  display: flex;
+  margin: 0px auto;
+  margin-bottom: 10rem;
+}
+
+.reviews {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem;
+  margin-right: 1.6rem;
+  width: 353px;
+  border-radius: 8px;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 10% 50%;
+  grid-template-rows: 10% 50%;
+  column-gap: 1rem;
+  row-gap: 0.8rem;
+}
+
+.description img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 0.9rem;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.9;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.opinion {
+  color: hsl(300, 24%, 96%);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+#irene {
+  position: relative;
+  top: 1rem;
+}
+
+#anne {
+  position: relative;
+  top: 2rem;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    padding: 45px;
+  }
+
+  #main, #reviews-container {
+    width: 1200px;
+  }
+
+  #main {
+    margin-right: 0rem;
+  }
+
+  #presentation h1 {
+    font-size: 3.2rem;
+  }
+
+  #presentation p {
+    font-size: 1.2rem;
+  }
+
+  #rating {
+    margin-left: 6rem;
+  }
+
+  #rating > div {
+    padding: 0.7em;
+  }
+  
+  #rating img {
+    width: 12%;
+  }
+
+  #rating .paragraph {
+    font-size: 1.1rem;
+    margin-left: 0.2rem;
+  }
+
+
+  .description {
+    row-gap: 1.2rem;
+  }
+
+  .reviews {
+    width: 352px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+  
+  .verified {
+    font-size: 0.95rem;
+  }
+  
+  .opinion {
+    font-size: 0.85rem;
+  }
+  
+} 
+
+@media (max-width: 800px) {
+  html {
+    font-size: 24px;
+  }
+
+  #main {
+    flex-flow: column;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+  }
+
+  #presentation {
+    width: 95%;
+    text-align: center;
+  }
+
+  #presentation h1 {
+    font-size: 4rem;
+    margin-bottom: 1.3rem;
+  }
+
+  #presentation p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #rating {
+    margin: 0px auto;
+    width: 95%;
+  }
+  
+  #rating > div {
+    position: static;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.3rem;
+  }
+
+  #rating img {
+    display: inline-block;
+    width: 5%;
+    margin-bottom: 0.4rem;
+  }
+
+  #rating .paragraph {
+    font-size: 1.5rem;
+  }
+
+  #reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    width: 95%;
+    margin: 0px;
+    position: static;
+  }
+
+  .description {
+    row-gap: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .verified {
+    font-size: 1.5rem;
+  }
+
+  .opinion {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 30px;
+  }
+}

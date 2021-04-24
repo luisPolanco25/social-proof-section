@@ -150,6 +150,7 @@ body {
   body {
     padding: 45px;
     overflow-x: hidden;
+    overflow-y: auto;
   }
   
   #main, #reviews-container {

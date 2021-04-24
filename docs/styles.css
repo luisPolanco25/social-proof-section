@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
   font-family: 'Spartan', sans-serif;
   background-color: hsl(0, 0%, 100%);
@@ -204,10 +204,17 @@ body {
     font-size: 24px;
   }
 
+  body {
+    padding: 15px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+
   #main {
+    width: 100%;
     flex-flow: column;
-    margin-bottom: 3rem;
-    align-items: flex-start;
+    margin: 0px auto;
+    margin-bottom: 1.5rem;
   }
 
   #presentation {
@@ -216,13 +223,13 @@ body {
   }
 
   #presentation h1 {
-    font-size: 4rem;
-    margin-bottom: 1.3rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
   }
 
   #presentation p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 0.60rem;
+    margin-bottom: 0.8rem;
   }
 
   #rating {
@@ -234,7 +241,8 @@ body {
     position: static;
     flex-direction: column;
     text-align: center;
-    padding: 1.3rem;
+    margin: 0px auto;
+    padding: 0.5rem;
   }
 
   #rating img {
@@ -244,34 +252,40 @@ body {
   }
 
   #rating .paragraph {
-    font-size: 1.5rem;
+    font-size: 0.55rem;
   }
 
   #reviews-container {
     flex-direction: column;
     align-items: center;
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 0.5rem;
   }
 
   .reviews {
-    width: 95%;
-    margin: 0px;
-    position: static;
+    position: static !important;
+    padding: 1rem;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 10px;
   }
 
   .description {
-    row-gap: 1.5rem;
+    row-gap: 0.62rem;
+    column-gap: 0.6rem;
   }
 
   .name {
-    font-size: 1.8rem;
+    font-size: 0.51rem;
   }
 
   .verified {
-    font-size: 1.5rem;
+    font-size: 0.45rem;
   }
 
   .opinion {
-    font-size: 1.5rem;
+    font-size: 0.43rem;
   }
 }
 

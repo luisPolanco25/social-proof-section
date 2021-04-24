@@ -138,19 +138,20 @@ body {
   html {
     font-size: 18px;
   }
-
+  
   body {
     padding: 45px;
+    overflow-x: hidden;
   }
-
+  
   #main, #reviews-container {
     width: 1200px;
   }
-
+  
   #main {
     margin-right: 0rem;
   }
-
+  
   #presentation h1 {
     font-size: 3.2rem;
   }
@@ -207,14 +208,13 @@ body {
   body {
     padding: 15px;
     margin: 0px;
-    overflow-x: hidden;
   }
 
   #main {
     width: 100%;
     flex-flow: column;
     margin: 0px auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
   }
 
   #presentation {
@@ -242,6 +242,7 @@ body {
     flex-direction: column;
     text-align: center;
     margin: 0px auto;
+    margin-bottom: 0.4rem;
     padding: 0.5rem;
   }
 

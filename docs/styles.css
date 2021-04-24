@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  /* width: 100%; */
+  width: 100%;
   min-height: 100vh;
   font-family: 'Spartan', sans-serif;
   background-color: hsl(0, 0%, 100%);
@@ -134,9 +134,17 @@ body {
   top: 2rem;
 }
 
+@media (max-width:1350px) {
+  body {
+    padding-top: 80px;
+    font-size: 18px;
+    overflow-y: hidden;
+  }
+}
+
 @media (max-width: 1000px) {
   html {
-    font-size: 18px;
+    font-size: 19px;
   }
   
   body {
@@ -202,7 +210,7 @@ body {
 
 @media (max-width: 800px) {
   html {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   body {
@@ -287,11 +295,5 @@ body {
 
   .opinion {
     font-size: 0.43rem;
-  }
-}
-
-@media (max-width: 500px) {
-  html {
-    font-size: 30px;
   }
 }
